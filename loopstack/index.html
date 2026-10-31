@@ -245,7 +245,7 @@
 
         .footer-logo-text {
             font-family: 'General Sans', -apple-system, sans-serif;
-            font-size: 21.9vw;
+            font-size: 17.36vw; /* "New nomads" шире "Loopstack" на 26% — уменьшено, чтобы слово занимало ту же ширину экрана */
             font-weight: 400;
             color: #ffffff;
             letter-spacing: -0.03em;
@@ -445,7 +445,7 @@
     </footer>
 
     <div class="footer-logo-wrap">
-        <h2 class="footer-logo-text">Loopstack</h2>
+        <h2 class="footer-logo-text">New nomads</h2>
     </div>
 
     <div class="video-container">
@@ -481,8 +481,8 @@
                     inner.className = 'letter-inner';
 
                     // Задаем задержку анимации для каждой буквы:
-                    // 9 букв, задержка шага 0.09с, длительность анимации 1.2с.
-                    // Последняя буква закончит выдвигаться ровно на отметке: 0.72с (задержка) + 1.2с (анимация) = 1.92 секунды!
+                    // 10 символов (включая пробел), задержка шага 0.09с, длительность анимации 1.2с.
+                    // Последняя буква закончит выдвигаться ровно на отметке: 0.81с (задержка) + 1.2с (анимация) = 2.01 секунды!
                     inner.style.animationDelay = `${index * 0.09}s`;
 
                     wrapper.appendChild(inner);
